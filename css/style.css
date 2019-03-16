@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #333;
+  background-color: #f2f2f2;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1200px;
+  min-width: 768px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.main-nav {
+  background-color: #fff;
+  padding: 15px 6%;
+}
+
+.main-header {
+  position: relative;
+}
+
+.main-logo {
+  display: block;
+  width: 138px;
+  position: absolute;
+  left: -69px;
+  margin-left: 50%;
+}
+
+.main-nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+
+.main-nav-list li {
+  width: 20%;
+}
+
+.main-nav-list li:nth-child(2) {
+  margin-right: auto;
+}
+
+.main-nav-list li:nth-child(3),
+.main-nav-list li:nth-child(4) {
+  text-align: right
+}
+
+.main-nav-link {
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+}
+
+.main-nav-link:focus,
+.main-nav-link:hover:not(.main-nav-link-active) {
+  color: #81b3d2;
+}
+
+.main-nav-link-active {
+  color: #766357;
+}
+
+.main-img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
