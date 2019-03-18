@@ -127,7 +127,6 @@ input[type="radio"].visually-hidden {
 
 .main-head {
   margin: 0 auto 35px;
-  text-transform: uppercase;
   width: 576px;
   font-size: 21px;
   line-height: 26px;
@@ -183,7 +182,6 @@ input[type="radio"].visually-hidden {
   margin: 0 0 20px;
   font-size: 21px;
   line-height: 21px;
-  text-transform: uppercase;
   text-align: center;
   font-weight: 700;
 }
@@ -191,10 +189,189 @@ input[type="radio"].visually-hidden {
 .real-city-text-block-descr,
 .diablo-bridge-text-block-descr {
   margin: 0 0 20px;
-  text-transform: uppercase;
   line-height: 21px;
   text-align: center;
   position: relative;
+}
+
+.attractions {
+  background-color: #eee;
+}
+
+.attractions-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.attraction-block {
+  width: 33.33%;
+  padding: 45px 4% 60px;
+  box-sizing: border-box;
+}
+
+.attraction-head {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 25px;
+  color: #000;
+}
+
+.attraction-descr {
+  margin: 0;
+  text-align: center;
+}
+
+.text-block-descr {
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+.attractions-list-icons .attraction-head {
+  margin: 100px 0 25px;
+}
+
+.attractions-list-icons .attraction-block {
+  padding: 60px 4% 80px;
+  position: relative;
+}
+
+.attractions-icons {
+  background-color: #fff;
+}
+
+.attractions-list-icons .attraction-block::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  top: 60px;
+  transform: translateX(-12%)
+}
+
+.attractions-list-icons .attraction-block:nth-child(1)::after {
+  background-image: url(../img/icons/icon-1.svg);
+}
+
+.attractions-list-icons .attraction-block:nth-child(2)::after {
+  background-image: url(../img/icons/icon-2.svg);
+}
+
+.attractions-list-icons .attraction-block:nth-child(3)::after {
+  background-image: url(../img/icons/icon-3.svg);
+}
+
+.search-block {
+  margin: 0;
+  padding: 50px 6% 0;
+}
+
+.search-block-head {
+  margin: 0 0 24px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+}
+
+.search-block-descr {
+  margin: 0 auto 50px;
+  line-height: 24px;
+  width: 576px;
+  text-align: center;
+}
+
+.search-form {
+  margin: 0 auto;
+  width: 576px;
+  position: relative;
+}
+
+.search-form-head {
+  margin: 0;
+  text-align: center;
+  display: block;
+  padding: 30px 88px;
+  box-sizing: border-box;
+  font-size: 21px;
+  line-height: 26px;
+  color: #fff;
+  background-color: #766357;
+}
+
+.form-input-blocks {
+  position: absolute;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 55px 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-weight: 700;
+  color: #000;
+  margin-right: 20px;
+  max-width: 100px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.form-input-date,
+.form-input-num {
+  width: 345px;
+  float: right;
+  border: none;
+  background-color: #f2f2f2;
+  font-weight: 700;
+  box-sizing: border-box;
+  padding: 10px 45px 10px 15px;
+}
+
+.form-input-block {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.form-date-input {
+  position: absolute;
+  right: 8px;
+  top: 6px;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.form-date-input svg {
+  fill: #a9a9a9;
+}
+
+.amount-people {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.form-input-num {
+  width: 117px;
+}
+
+
+
+.display-none {
+  display: none;
 }
 
 

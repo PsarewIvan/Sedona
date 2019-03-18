@@ -32,33 +32,35 @@
         <h2 class="visually-hidden">Седона - настоящий городок</h2>
         <div class="real-city-text-block">
           <p class="real-city-text-block-head">НАСТОЯЩИЙ ГОРОДОК</p>
-          <p class="real-city-text-block-descr">— #1 —</p>
+          <p class="real-city-text-block-descr">— №1 —</p>
           <p class="real-city-text-block-descr">СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
         </div>
         <div class="real-city-img">
           <img src="img/photo1.jpg" alt="Седона, красивый вид на горы" width="800">
         </div>
       </section>
-      <section class="attractions">
+      <section class="attractions attractions-icons">
         <h2 class="visually-hidden">Что у нас есть</h2>
-        <div class="attraction-block">
-          <p class="attraction-head">Жилье</p>
-          <p class="attraction-descr">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-        </div>
-        <div class="attraction-block">
-          <p class="attraction-head">ЕДА</p>
-          <p class="attraction-descr">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
-        </div>
-        <div class="attraction-block">
-          <p class="attraction-head">СУВЕНИРЫ</p>
-          <p class="attraction-descr">Не только китайского, но и местного производства!</p>
-        </div>
+        <ul class="attractions-list attractions-list-icons">
+          <li class="attraction-block">
+            <p class="attraction-head">Жилье</p>
+            <p class="attraction-descr">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li class="attraction-block">
+            <p class="attraction-head">ЕДА</p>
+            <p class="attraction-descr">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+          </li>
+          <li class="attraction-block">
+            <p class="attraction-head">СУВЕНИРЫ</p>
+            <p class="attraction-descr">Не только китайского, но и местного производства!</p>
+          </li>
+        </ul>
       </section>
       <section class="diablo-bridge">
         <h2 class="visually-hidden">Мост дьявола</h2>
         <div class="diablo-bridge-text-block">
           <p class="diablo-bridge-text-block-head">ТАМ ЕСТЬ<br>Мост дьявола</p>
-          <p class="diablo-bridge-text-block-descr">— #2 —</p>
+          <p class="diablo-bridge-text-block-descr">— №2 —</p>
           <p class="diablo-bridge-text-block-descr">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
         <div class="diablo-bridge-img">
@@ -67,54 +69,64 @@
       </section>
       <section class="attractions">
         <h2 class="visually-hidden">Что у нас есть</h2>
-        <div class="attraction-block">
-          <p class="attraction-head">Жилье</p>
-          <p class="text-block-descr">— #3 —</p>
-          <p class="attraction-descr">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-        </div>
-        <div class="attraction-block">
-          <p class="attraction-head">ЕДА</p>
-          <p class="text-block-descr">— #4 —</p>
-          <p class="attraction-descr">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
-        </div>
-        <div class="attraction-block">
-          <p class="attraction-head">СУВЕНИРЫ</p>
-          <p class="text-block-descr">— #5 —</p>
-          <p class="attraction-descr">Не только китайского, но и местного производства!</p>
-        </div>
+        <ul class="attractions-list">
+          <li class="attraction-block">
+            <p class="attraction-head">НЕБОЛЬШАЯ<br>ПЛОЩАДЬ</p>
+            <p class="text-block-descr">— №3 —</p>
+            <p class="attraction-descr">ВСЕ достопримечательности находятся очень близко</p>
+          </li>
+          <li class="attraction-block">
+            <p class="attraction-head">КРАСИВАЯ<br>ДОРОГА</p>
+            <p class="text-block-descr">— №4 —</p>
+            <p class="attraction-descr">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+          </li>
+          <li class="attraction-block">
+            <p class="attraction-head">МАЛО<br>ТУРИСТОВ</p>
+            <p class="text-block-descr">— №5 —</p>
+            <p class="attraction-descr">Большинство едет в гранд каньон и толпится там</p>
+          </li>
+        </ul>
       </section>
       <section class="search-block">
         <h2 class="visually-hidden">Форма поиска гостиницы</h2>
         <p class="search-block-head">Заинтересовались?</p>
-        <p class="search-block-descr">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <p class="search-block-descr">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <form action="post" class="search-form">
           <h3 class="search-form-head">Поиск гостиницы в седоне</h3>
-          <div class="arrival-date">
-            <label for="arrival-input">Дата заезда:</label>
-            <input type="text" id="arrival-input" name="arrival-date" placeholder="24 Апреля 2017">
-            <button type="button" class="form-date-input"><span class="visually-hidden">Выбрать дату</span></button>
-          </div>
-          <div class="departure-date">
-            <label for="departure-input">Дата Выезда:</label>
-            <input type="text" id="departure-input" name="departure-date" placeholder="4 июля 2017">
-            <button type="button" class="form-date-input"><span class="visually-hidden">Выбрать дату</span></button>
-          </div>
-          <div class="amount-people">
-            <div class="amount-people-block">
-              <label for="adult">Взрослые:</label>
-              <button type="button" class="amount-people-button input-button-minus" id="amountAdultPlus"><span class="visually-hidden">Уменьшить количество взрослых</span></button>
-              <input type="number" min="1" max="10" name="adult" value="2" id="adult">
-              <button type="button" class="amount-people-button input-button-plus" id="amountAdultMinus"><span class="visually-hidden">Увеличить количество взрослых</span></button>
+          <div class="form-input-blocks">
+            <div class="arrival-date form-input-block">
+              <label for="arrival-input" class="form-label">Дата заезда:</label>
+              <input type="text" id="arrival-input" name="arrival-date" placeholder="24 Апреля 2017" class="form-input-date">
+              <button type="button" class="form-date-input">
+                <span class="visually-hidden">Выбрать дату</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
+              </button>
             </div>
-            <div class="amount-people-block">
-              <label for="children">Дети:</label>
-              <button type="button" class="amount-people-button input-button-minus" id="amountChildrenPlus"><span class="visually-hidden">Уменьшить количество детей</span></button>
-              <input type="number" min="1" max="10" name="children" value="0" id="children">
-              <button type="button" class="amount-people-button input-button-plus" id="amountChildrenMinus"><span class="visually-hidden">Увеличить количество детей</span></button>
+            <div class="departure-date form-input-block">
+              <label for="departure-input" class="form-label">Дата Выезда:</label>
+              <input type="text" id="departure-input" name="departure-date" placeholder="4 июля 2017" class="form-input-date">
+              <button type="button" class="form-date-input">
+                <span class="visually-hidden">Выбрать дату</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
+              </button>
             </div>
-          </div>
-          <div class="submit-block">
-            <button type="submit" class="button submit-button">Найти</button>
+            <div class="amount-people form-input-block">
+              <div class="amount-people-block">
+                <label for="adult" class="form-label">Взрослые:</label>
+                <button type="button" class="amount-people-button input-button-minus" id="amountAdultPlus"><span class="visually-hidden">Уменьшить количество взрослых</span></button>
+                <input type="number" min="1" max="10" name="adult" value="2" id="adult" class="form-input-num">
+                <button type="button" class="amount-people-button input-button-plus" id="amountAdultMinus"><span class="visually-hidden">Увеличить количество взрослых</span></button>
+              </div>
+              <div class="amount-people-block">
+                <label for="children" class="form-label">Дети:</label>
+                <button type="button" class="amount-people-button input-button-minus" id="amountChildrenPlus"><span class="visually-hidden">Уменьшить количество детей</span></button>
+                <input type="number" min="1" max="10" name="children" value="0" id="children" class="form-input-num">
+                <button type="button" class="amount-people-button input-button-plus" id="amountChildrenMinus"><span class="visually-hidden">Увеличить количество детей</span></button>
+              </div>
+            </div>
+            <div class="submit-block">
+              <button type="submit" class="button submit-button">Найти</button>
+            </div>
           </div>
         </form>
       </section>
