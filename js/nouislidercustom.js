@@ -1,11 +1,11 @@
 var slider = document.getElementById('range-slider');
 
   noUiSlider.create(slider, {
-    start: [0, 15000],
+    start: [0, 5000],
     connect: true,
     range: {
         'min': 0,
-        'max': 15000
+        'max': 5000
     },
     step: 100
   });
