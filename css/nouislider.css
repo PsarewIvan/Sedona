@@ -91,12 +91,14 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-origin {
   height: 22px;
   left: -12px;
   top: -9px;
+  transform: translateX(1px);
 }
 .noUi-handle:active {
   width: 22px;
   height: 22px;
   left: -12px;
   top: -9px;
+  transform: translateX(1px);
 }
 html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   right: -11px;
@@ -150,12 +152,14 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle:active {
   left: 8px;
   top: 8px;
 }
-.noUi-handle:active:after {
+.noUi-handle:hover:after,
+.noUi-handle:focus:after {
   left: 9px;
   top: 9px;
 }
-.noUi-handle:after {
-/*  left: 17px;*/
+.noUi-handle:active:after {
+  left: 9px;
+  top: 9px;
 }
 .noUi-vertical .noUi-handle:before,
 .noUi-vertical .noUi-handle:after {
