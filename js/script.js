@@ -31,15 +31,15 @@ popupButton.addEventListener('click', function(evt) {
   if (storageArrival && storageDeparture) {
     arrival.value = storageArrival;
     departure.value = storageDeparture;
-    numberOfAdults.focus();
+    setTimeout(function() { numberOfAdults.focus() }, 650);
   } else if (storageDeparture) {
     departure.value = storageDeparture;
-    arrival.focus();
+    setTimeout(function() { arrival.focus() }, 650);
   } else if (storageDeparture) {
     arrival.value = storageArrival;
-    departure.focus();
+    setTimeout(function() { departure.focus() }, 650);
   } else {
-    arrival.focus();
+    setTimeout(function() { arrival.focus() }, 650);
   }
 });
 
@@ -96,3 +96,27 @@ childrenButtonPlus.addEventListener('click', function(evt) {
     numberOfChildrens.value = +numberOfChildrens.value + 1;
   }
 });
+
+//подключаем яндекс карты
+ymaps.ready(init);
+function init() {  
+  var myMap = new ymaps.Map("yandexMap", {
+    center: [34.87195183, -111.75626900],
+    zoom: 8
+  });
+  
+  var placemark = new ymaps.Placemark([34.87195183, -111.75626900], {}, {
+    preset: 'islands#blueHotelIcon'
+  });
+  
+  myMap.geoObjects.add(placemark);
+}
+
+
+
+
+
+
+
+
+
