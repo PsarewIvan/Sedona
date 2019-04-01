@@ -1,5 +1,42 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic');
 
+@keyframes modalError {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+
+  0, 100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  
+  70% {
+    opacity: 0.1;
+  }
+  
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -219,6 +256,8 @@ input[type="radio"].visually-hidden {
 
 .attractions-second {
   min-height: 255px;
+  position: relative;
+  z-index: 51;
 }
 
 .attractions-list {
@@ -297,6 +336,9 @@ input[type="radio"].visually-hidden {
 .search-block {
   margin: 0;
   padding: 51px 6% 0;
+  position: relative;
+  z-index: 50;
+  background-color: #fff;
 }
 
 .search-block-head {
@@ -323,6 +365,8 @@ input[type="radio"].visually-hidden {
 
 .search-form-head {
   margin: 0;
+  border: none;
+  width: inherit;
   text-align: center;
   display: block;
   padding: 30px 88px;
@@ -332,6 +376,8 @@ input[type="radio"].visually-hidden {
   color: #fff;
   background-color: #766357;
   cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .search-form-head:hover,
@@ -352,6 +398,7 @@ input[type="radio"].visually-hidden {
   width: 100%;
   display: flex;
   flex-direction: column;
+  z-index: -1;
 }
 
 .form-label {
@@ -531,6 +578,7 @@ input[type="radio"].visually-hidden {
 
 .map {
   line-height: 0;
+  position: relative;
 }
 
 .map-iframe {
@@ -1120,32 +1168,14 @@ input[type="radio"].visually-hidden {
   }
 }
 
+.modal-input-invalid {
+  background-color: rgba(255, 31, 31, 0.22);
+}
 
+.modal-show {
+  animation: bounce 0.6s;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.modal-error {
+  animation: modalError 0.6s;
+}

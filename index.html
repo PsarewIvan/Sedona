@@ -91,8 +91,8 @@
         <h2 class="visually-hidden">Форма поиска гостиницы</h2>
         <p class="search-block-head">Заинтересовались?</p>
         <p class="search-block-descr">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <form action="post" class="search-form">
-          <h3 class="search-form-head" tabindex="0">Поиск гостиницы в седоне</h3>
+        <form action="https://echo.htmlacademy.ru" class="search-form" method="post">
+          <button class="search-form-head" tabindex="0">Поиск гостиницы в седоне</button>
           <div class="form-input-blocks display-none">
             <div class="arrival-date form-input-block">
               <label for="arrival-input" class="form-label">Дата заезда:</label>
@@ -120,7 +120,7 @@
               <div class="amount-people-block">
                 <label for="children" class="form-label amount-form-label">Дети:</label>
                 <button type="button" class="amount-people-button input-button-minus" id="amountChildrenMinus"><span class="visually-hidden">Уменьшить количество детей</span></button>
-                <input type="number" min="1" max="10" name="children" value="0" id="children" class="form-input form-input-num">
+                <input type="number" min="0" max="10" name="children" value="0" id="children" class="form-input form-input-num">
                 <button type="button" class="amount-people-button input-button-plus" id="amountChildrenPlus"><span class="visually-hidden">Увеличить количество детей</span></button>
               </div>
             </div>
@@ -169,6 +169,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
 
